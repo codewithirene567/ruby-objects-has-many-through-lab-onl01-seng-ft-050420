@@ -16,7 +16,7 @@ attr_accessor :name, :doctor
   end
 
   def doctors
-    appointment.collect {|doctor| self == appointment}
+    appointment.collect {|doctor| appointments.doctor}
   end
 
   def new_appointment(date, doctor)
