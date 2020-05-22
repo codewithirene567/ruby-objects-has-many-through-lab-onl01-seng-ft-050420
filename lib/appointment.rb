@@ -5,7 +5,7 @@ attr_accessor :date, :patient, :doctor
 
 
 
-  def initialize(date, patient, doctor) #why was it not equal to a string
+  def initialize( date, patient, doctor) #why was it not equal to a string
     @date = date
     @patient = patient
     @doctor = doctor
