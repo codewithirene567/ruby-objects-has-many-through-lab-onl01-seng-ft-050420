@@ -11,16 +11,16 @@ attr_accessor :name, :doctor
     @@all
   end
 
-  def new_appointment(date, doctor)
-    appointment.Patient = new appointment
-  end
-
   def appointments
     appointment.select {|appointment| self == appointment}
   end
 
   def doctors
     appointment.collect {|doctor| self == appointment}
+  end
+
+  def new_appointment(date, doctor)
+    appointment.Patient = new appointment
   end
 
 end
