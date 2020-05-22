@@ -16,7 +16,7 @@ attr_accessor :name, :song, :artist
   end
 
   def artists
-    songs.collect {|name| artist == name}
+    song.all.collect {|name| artist == name}
   end
 
 
