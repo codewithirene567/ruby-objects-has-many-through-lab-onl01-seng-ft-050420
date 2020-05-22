@@ -7,6 +7,10 @@ attr_accessor :name, :song, :artist
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def songs
     songs.select {|songs| genre == songs}
   end
@@ -15,8 +19,6 @@ attr_accessor :name, :song, :artist
     name.collect {|name| artist == name}
   end
 
-  def self.all
-    @@all
-  end
+
 
 end
