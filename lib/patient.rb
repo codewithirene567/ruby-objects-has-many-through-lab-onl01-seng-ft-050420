@@ -20,7 +20,7 @@ attr_accessor :name, :doctor
   end
 
   def new_appointment(date, doctor)
-    appointment.Patient = new appointment
+    Appointments.new Patient = new appointment
   end
 
 end
