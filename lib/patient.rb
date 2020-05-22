@@ -12,7 +12,7 @@ attr_accessor :name, :doctor
   end
 
   def appointments
-    appointment.select {|appointment| self == appointment}
+    appointment.all.select {|appointment| self == appointments.patients }
   end
 
   def doctors
